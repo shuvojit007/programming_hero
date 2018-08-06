@@ -1,0 +1,74 @@
+{
+	"pchallenge": [{
+			"question": "What would be the output of the following code? ",
+			"type": "quiz",
+			"cquiz": {
+				"solution": "I will need to clean the dishes",
+				"code": "score = 67 \n\nif score > 80:\n   print(\"I will play video games.\")\nelse:\n   print(\"I will need to clean dishes\")",
+				"set1": "I will play video games.",
+				"set2": "I will need to clean the dishes",
+				"set3": "No output"
+			}
+		},
+		{
+			"question": "Fill out the code below so that you have to fulfill both the conditions. ",
+			"type": "printsln",
+			"cblanks": {
+				"soln": "&&",
+				"tf1": "age = 32<br\/>huge_headphone = True",
+				"tt1": "if age >30 ",
+				"tt2": "huge_headphone == True:",
+				"tf2": "&ensp; print (\"Must be Chuck Norris.\")<br\/>else:<br\/>&ensp; print(\"SOC, Son of Chuck Norris\")",
+				"output": "Must be Chuck Norris"
+			}
+		},
+		{
+			"question": "What would be the output of the code below?",
+			"type": "printsln",
+			"cblanks": {
+				"soln": "-7",
+				"tf1": "nums = [112, 154, 11, 21, 13, -7]<br\/>print(min(nums))",
+				"tt1": "null",
+				"tt2": "null",
+				"tf2": "null",
+				"output": "-7"
+			}
+		},
+		{
+			"question": "What does append do?",
+			"type": "quiz",
+			"cquiz": {
+				"solution": "Add something as the last element of a list",
+				"code": "null",
+				"set1": "Do the pending job",
+				"set2": "Add something to a list as the first element",
+				"set3": "Add something as the last element of a list"
+			}
+		},
+		{
+			"question": "How would you get the index of the car in the vehicles list?",
+			"type": "printsln",
+			"cblanks": {
+				"soln": "index",
+				"tf1": "vehicles = [\"bus\", \"car\", \"bike\", \"plane\", \"rocket\"]",
+				"tt1": "position = vehicles.",
+				"tt2": "(\"car\")",
+				"tf2": "print(position)",
+				"output": "1"
+			}
+		},
+		{
+
+			"question": "What would be the index of the 'France'?",
+			"type": "printsln",
+			"cblanks": {
+				"soln": "3",
+				"tf1": "european = ['Poland', 'Germany', 'Greece', 'France'] <br\/>print(european.index('France'))",
+				"tt1": "null",
+				"tt2": "null",
+				"tf2": "null",
+				"output": "True"
+			}
+		}
+	]
+}

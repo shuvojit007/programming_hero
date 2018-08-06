@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.FeedBack_Module">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/feed_tl"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/action_bar_gradient"/>
+
+    <ProgressBar
+        android:layout_below="@+id/feed_tl"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:indeterminate="true"
+        android:id="@+id/progress"
+        android:visibility="gone"
+        android:layout_margin="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <ScrollView
+        android:layout_below="@+id/progress"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/text_view_question"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/card"
+                        android:text="How much you liked this app?"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="start" />
+                    <com.hsalf.smilerating.SmileRating
+                        android:layout_margin="5dp"
+                        android:id="@+id/smile_rating"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/tt2"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/card"
+                        android:text="What are the three things you have liked?"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="start" />
+                 <LinearLayout
+
+                     android:layout_width="match_parent"
+                     android:orientation="horizontal"
+                     android:layout_marginLeft="20dp"
+                     android:layout_marginBottom="5dp"
+                     android:layout_marginRight="20dp"
+                     android:layout_height="wrap_content">
+                     <TextView
+                         android:layout_width="wrap_content"
+                         android:text="A."
+                         android:textColor="#000"
+                         android:textSize="15sp"
+                         android:layout_marginRight="5dp"
+                         android:layout_height="wrap_content" />
+                     <EditText
+                         android:id="@+id/e2a"
+                         android:layout_marginRight="5dp"
+                         android:layout_width="match_parent"
+                         android:layout_height="wrap_content" />
+                 </LinearLayout>
+                 <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="B."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e2b"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                 <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="C."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e2c"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/tt3"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/card"
+                        android:text="What are the three things we should improve"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="start" />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="A."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e3a"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="B."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e3b"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="C."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e3c"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                app:cardElevation="5dp"
+                app:contentPadding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/tt4"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/card"
+                        android:text="How Likely will you Recommend this app?"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="start" />
+
+
+                    <RadioGroup
+                        android:id="@+id/r1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp">
+
+                        <RadioButton
+                            android:id="@+id/rb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="200%. I will knock every door to install this app" />
+                        <RadioButton
+                            android:id="@+id/rb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="I will recommend if anyone ask for it" />
+                        <RadioButton
+                            android:id="@+id/rb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Never. (I will uninstall this app)"/>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                app:cardElevation="5dp"
+                app:contentPadding="15dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/tt5"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/card"
+                        android:text="How you heard about this app?"
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="start" />
+
+
+                    <RadioGroup
+                        android:id="@+id/r2"
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:padding="2dp">
+
+                        <RadioButton
+                            android:id="@+id/rrb1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="It came in my dream" />
+                        <RadioButton
+                            android:id="@+id/rrb2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="My friend told me about it"/>
+                        <RadioButton
+                            android:id="@+id/rrb3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Social media"/>
+                        <RadioButton
+                            android:id="@+id/rrb4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="3dp"
+                            android:text="Others"/>
+
+
+                    </RadioGroup>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                app:cardElevation="5dp"
+                app:cardCornerRadius="10dp"
+
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:padding="5dp"
+                        android:id="@+id/tt6"
+                        android:layout_width="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/card"
+                        android:text="We are planning to make more apps and more content. Which three we should do first."
+                        android:textAlignment="textStart"
+                        android:textSize="16sp"
+                        android:layout_marginLeft="5dp"
+                        android:gravity="start" />
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="A."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e4a"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="B."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e4b"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                    <LinearLayout
+
+                        android:layout_width="match_parent"
+                        android:orientation="horizontal"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:text="C."
+                            android:textColor="#000"
+                            android:textSize="15sp"
+                            android:layout_marginRight="5dp"
+                            android:layout_height="wrap_content" />
+                        <EditText
+                            android:id="@+id/e4c"
+                            android:layout_marginRight="5dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/submit"
+                android:layout_width="200dp"
+                android:layout_height="35dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/primary_color_btn"
+
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Submit"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

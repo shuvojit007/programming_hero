@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">Programming Hero</string>
+    <string name="tt">ProgrammingMama <b>sdsdsdsdsdsdsdsdsdsd</b></string>
+    <string name="demo"> Let’s take a look at another example \n\nWhen you installed this app on your mobile, you went to the app store and hit the install button.\n\nIt’s not only for this app. Rather you used the same process to install other apps.\n\nEvery time you want to install apps \n  1.you go to the play store \n  2. hit the install button. \n\nThis means, you repeat the same process again and again for every app you want to install on your phone.</string>
+    <string name="demo2">Hence installing apps is a repeatable task, and therefore installing apps is also a <b>program.</b></string>
+    <string name="listing_py">num1 = 1.5 \nnum2 = 6.3  \n\n# Add two numbers \n\nsum = float(num1) + float(num2)  \n\n# Display the sum  \n \n print(\'The sum of 0 and 1 is ,sum))</string>
+    <string name="use_b_print_b_to_show_output">Use <b>print()</b> to show output.</string>
+
+    <string name="email_body_share_text">I\'m using the Master Planner Pro app, I think you will love it!!\n
+To-do, Usual &amp; Location Based Reminder, Project Planner, Countdown, Cloud Backup in one app\n</string>
+
+    <string name="app_package_name">com.cruxbd.master_planner_pro</string>
+
+    <!-- Settings -->
+    <string name="title_send_feedback">Feedback/Help</string>
+    <string name="summary_send_feedback">Give us a feedback.</string>
+    <string name="choose_email_client">Choose email client</string>
+    <string name="url_faq">https://www.curxbd.com/Privacy/</string>
+    <string name="url_privacy">https://www.curxbd.com/Privacy/</string>
+    <string name="url_rate_app">https://play.google.com/store/apps/details?id=com.cruxbd.master_planner_pro</string>
+    <string name="help_title">Help</string>
+
+
+    <string name="crux_email">app.cruxbd@gmail.com</string>
+    <string name="crux_description">CRUX is a technology Startup lead by some passionate &amp; professional Researchers, Entrepreneurs &amp; Developers. We are the only company in Bangladesh who works in Embedded System, Robotics and Software altogether. It’s a product based company.</string>
+    <string name="crux_web">https://www.cruxbd.com/</string>
+    <string name="crux_facebook_page">Official.CRUX</string>
+    <string name="crux_email_subject_contact_us_pro">Master Planner pro - contact us</string>
+    <string name="crux_email_subject_contact_us_free">Master Planner free - contact us</string>
+    <string name="share_this_app">Share this app</string>
+    <string name="crux_email_subject_help_feedback">Master Planner Pro - Feedback/Help</string>
+    <string name="email_subject_install_master_planner_app">Install Master Planner app</string>
+    <string name="email_or_phone">\@ email</string>
+    <string name="title_activity_login_user">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="faketext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</string>
+    <string name="fake">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\\\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum</string>
+    <string name="dummytext">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="premimum">If you want to get the premium version of programming hero and unlock all module . You need to share this app to your 5 friends and help us to grow otherwise to buy us a coffee to get energy back and add more functionality to this app. </string>
+    <string name="aboutus">Wanted to have fun! \n\nThat’s why we created programming hero so that you can have fun as well. From now on, we have only one mission: Make learning fun and enjoyable as if you are watching your favorite movie, visiting your favorite place. We were a team of two: Jhankar Mahbub and Shuvojit Kar. We were highly supported by Shahan Chowdhury, Dennis Bohr, Karina Islam, Joel Karzmuruski and Sebastian Kurpiel.\n\nThen we were blessed and helped by Hasibul hasan Shanto, Kazi Mashry, and Maliha Kabir. Now we are a community.
+</string>
+    <string name="ft">First Times</string>
+    <string name="st">Second Times</string>
+    <string name="gb">GO Back</string>
+    <string name="title_activity_certificate">Certificate</string>
+
+
+</resources>

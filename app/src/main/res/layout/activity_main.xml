@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main_app_bar"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/action_bar_gradient">
+
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/tl_lin"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:background="@drawable/texview_design"
+
+                android:layout_height="wrap_content">
+                <ImageView
+
+                    android:id="@+id/tl_trophy"
+                    android:layout_width="25dp"
+                    android:layout_marginLeft="5dp"
+                    android:src="@drawable/medal"
+                    android:layout_height="25dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="200"
+                    android:textSize="16sp"
+                    android:paddingRight="3dp"
+                    android:paddingLeft="2dp"
+                    android:fontFamily="@font/roboto"
+                    android:id="@+id/tl_mark"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/sound"
+                android:layout_width="25dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/play"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="5dp" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
+
+
+    <include layout="@layout/navigation_layout"/>
+
+
+</android.support.design.widget.CoordinatorLayout>

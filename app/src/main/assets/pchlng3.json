@@ -1,0 +1,60 @@
+{
+	"pchallenge3": [{
+		"question": "Which one is not true?",
+		"type": "quiz",
+		"quiz3": {
+			"solution": "A function can have only one parameter",
+			"code": "null",
+			"set1": "A function can be used multiple times",
+			"set2": "A function can be called inside a loop",
+			"set3": "A function can have only one parameter"
+		}
+	},
+		{
+			"question": "Write a for loop to show all the negative number in a for loop.",
+			"type": "printsln",
+			"blanks3": {
+				"soln": "for",
+				"tf1": "nums = [12, 54, -21, 113, -7]",
+				"tt1": "null",
+				"tt2": "num in nums:",
+				"tf2": "&ensp; if num < 0:<br\/>&emsp; print(num)",
+				"output": "-21<br\/>-7"
+			}
+		}, {
+			"question": "When should you use a <b>while</b> loop",
+			"type": "quiz",
+			"quiz3": {
+				"solution": "Run a loop based on a condition",
+				"code": "null",
+				"set1": "To run a for loop for each element of a list",
+				"set2": "Run a loop based on a condition",
+				"set3": "While calling your ex’s current life partner"
+			}
+		},
+		{
+			"question": "How would you stop the following loop code when you see the shark?",
+			"type": "printsln",
+			"blanks3": {
+				"soln": "break",
+				"tf1": "fishes = ['tuna', 'salmon', 'shark', 'nemo', 'goldfish']<br\/><br\/>for fish in fishes:<br\/>&emsp; if fish == 'shark':",
+				"tt1": "    ",
+				"tt2": "null",
+				"tf2": "&emsp; print(fish)",
+				"output": "tuna<br\/>salmon"
+			}
+		},
+		{
+			"question": "What do you need to write to return something from a function?",
+			"type": "printsln",
+			"blanks3": {
+				"soln": "return",
+				"tf1": "def full_name(first, last):",
+				"tt1": "   ",
+				"tt2": "\" first + \"\" + last\"",
+				"tf2": "name = full_name('Angelina', 'Jolie')<br\/>print(name)",
+				"output": "Angelina Jolie"
+			}
+		}
+	]
+}

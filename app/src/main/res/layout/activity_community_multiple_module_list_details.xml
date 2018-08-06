@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+>
+
+
+    <com.example.test.programmingmama.Utils.CustomViewPager
+        android:layout_width="match_parent"
+
+        android:id="@+id/comlistviewpager"
+        android:layout_height="match_parent">
+
+    </com.example.test.programmingmama.Utils.CustomViewPager>
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        app:layout_scrollFlags="scroll|exitUntilCollapsed"
+        android:layout_width="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+        <LinearLayout
+            android:layout_marginRight="15dp"
+            android:layout_gravity="right"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:id="@+id/tl_lin"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:background="@drawable/texview_design"
+                android:paddingLeft="3dp"
+                android:paddingRight="3dp"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/tl_trophy"
+                    android:layout_width="25dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/tophyanim"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:layout_height="28dp" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="200"
+                    android:textSize="15sp"
+
+                    android:id="@+id/tl_mark"
+                    android:textStyle="bold"
+                    android:layout_marginRight="5dp"
+                    android:textColor="@color/colorAccent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:visibility="gone"
+                android:id="@+id/sound"
+                android:layout_width="25dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical"
+                android:src="@drawable/play"
+                android:layout_height="25dp" />
+        </LinearLayout>
+
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <!--<include layout="@layout/app_bar_layout"/>-->
+    <com.badoualy.stepperindicator.StepperIndicator
+        android:layout_width="match_parent"
+        android:id="@+id/comliststepper"
+        app:stpi_circleRadius="10dp"
+        android:layout_below="@+id/tl"
+        android:background="@color/white"
+        app:stpi_indicatorRadius="10dp"
+        app:stpi_showDoneIcon="true"
+        app:stpi_circleColor="@color/colorPrimaryDark"
+        app:stpi_indicatorColor="@color/colorPrimary"
+        app:stpi_labelColor="@color/white"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:stpi_lineColor="@color/white"
+        app:stpi_lineDoneColor="@color/colorPrimary"
+        app:stpi_showStepNumberInstead="true"
+        app:stpi_stepCount="4"/>
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:elevation="10dp"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/white">
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/btnleft"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/left" />
+
+
+        <ImageView
+            android:padding="5dp"
+            android:layout_centerVertical="true"
+            android:id="@+id/btnright"
+            android:layout_width="50dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:scaleType="centerInside"
+             />
+
+        <Button
+            android:id="@+id/btn"
+            android:layout_width="120dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/button_corner"
+            android:text=" Finished "
+            android:visibility="gone"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</RelativeLayout>

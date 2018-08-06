@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <color name="colorPrimary">#14175E</color>
+    <color name="colorPrimaryDark">#1C1D36</color>
+    <color name="colorAccent">#f23d406c</color>
+    <color name="bgBottomNavigation">#1C1D36</color>
+    <color name="bgBottomNavigation2">#dadada</color>
+    <color name="white">#FFFFFF</color>
+    <color name="star">#f3df84</color>
+
+
+    <color name="green">#90fb89</color>
+    <color name="yellow">#f9f8e77c</color>
+    <color name="red">#f9f87c7c</color>
+
+    <color name="like">#668ae5</color>
+
+
+    <!--<color name="colorPrimary">#A700FF</color>-->
+    <!--<color name="colorPrimaryDark">#009BFC</color>-->
+    <!--<color name="colorAccent">#FF4081</color>-->
+
+    <color name="textTabLight">#7EC6FF</color>
+    <color name="textTabBright">#ffffff</color>
+
+    <color name="outline_gray">#cccccc</color>
+</resources>

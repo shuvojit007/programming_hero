@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "457597240770",
+    "firebase_url": "https://proghero-community.firebaseio.com",
+    "project_id": "proghero-community",
+    "storage_bucket": "proghero-community.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457597240770:android:150a599ec56b241c",
+        "android_client_info": {
+          "package_name": "com.example.test.programmingmama"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457597240770-3s7vvp58s9m3m2k7je3rm24p1s2q8pbm.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.test.programmingmama",
+            "certificate_hash": "fd0429c12464497a314d8c79d0a9509a4d1bc105"
+          }
+        },
+        {
+          "client_id": "457597240770-khockvoas3iedn6t5a341pdfg4cmkk9u.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK-6hoEumqFsGd2RY9Z_EmCG5NDQEGVPs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457597240770-khockvoas3iedn6t5a341pdfg4cmkk9u.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

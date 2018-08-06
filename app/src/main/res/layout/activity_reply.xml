@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".View.Activity.Reply_Activity">
+
+<android.support.design.widget.AppBarLayout
+    android:layout_width="match_parent"
+    android:id="@+id/apptl"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        app:title="Reply"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="?android:attr/homeAsUpIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+
+    </android.support.v7.widget.Toolbar>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:id="@+id/rplyquesframe"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:text="and we tell them to login... in that time, we should detect user registered before or not...if user didnt register before...we show them register link ...and if we know user has registered before then we show login screen"
+            android:textStyle="bold"
+            android:layout_margin="10dp"
+            android:id="@+id/rplyques"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</android.support.design.widget.AppBarLayout>
+
+
+
+    <LinearLayout
+
+        android:layout_below="@+id/apptl"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+       
+        <android.support.v7.widget.RecyclerView
+            android:background="#f3fdfaf5"
+            android:id="@+id/rply_rec"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:layout_height="0dp">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="10dp"
+            android:layout_width="match_parent"
+            android:id="@+id/card_quick_todo"
+            android:layout_weight="0.01"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/rply_add_et"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+
+                    android:hint="Enter reply here"
+                    android:inputType="textAutoCorrect|text"
+                    android:textColor="#424343"
+                    android:textSize="18sp">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/rply_add_icon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/add" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

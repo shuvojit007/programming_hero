@@ -1,0 +1,53 @@
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_marginRight="5dp"
+    android:layout_marginLeft="5dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="2dp"
+    app:cardCornerRadius="5dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:fontFamily="@font/robotoregular"
+            android:id="@+id/modulelist_name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/colorAccent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:text="Variable In Real World"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/progress"
+            android:layout_below="@+id/modulelist_name"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:max="100"
+            android:visibility="gone"
+            android:progress="45"/>
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/modulelist_name"
+            android:id="@+id/currentposition"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="20dp"
+            android:src="@drawable/position"
+            android:layout_margin="10dp"
+            android:layout_height="20dp" />
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

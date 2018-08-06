@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        app:title="Questions"
+        app:titleTextColor="@color/white"
+        app:navigationIcon="?android:attr/homeAsUpIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="?android:attr/actionBarSize"
+        android:background="@color/colorPrimary">
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+
+        android:layout_below="@+id/tl"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.RecyclerView
+
+            android:id="@+id/commentrec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </android.support.v7.widget.RecyclerView>
+
+
+
+        <android.support.v7.widget.CardView
+            app:cardElevation="10dp"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:id="@+id/card_quick_todo"
+            android:layout_weight="0.01"
+            android:layout_height="50dp"
+            android:layout_marginBottom="-3dp"
+            android:layout_marginLeft="-2dp"
+            android:layout_marginRight="-2dp"
+            >
+
+            <LinearLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+
+                android:orientation="horizontal"
+                >
+
+                <EditText
+                    android:id="@+id/comment_add_et"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:hint="Enter question here"
+                    android:inputType="textAutoCorrect|text"
+                    android:textColor="#424343"
+                    android:textSize="14sp">
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/comment_add_icon"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginRight="5dp"
+                    android:padding="5dp"
+                    app:srcCompat="@drawable/add" />
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textSize="20sp"
+        android:layout_margin="10dp"
+        android:id="@+id/text"
+        android:visibility="gone"
+        android:layout_below="@+id/tl"
+        android:textColor="@color/colorAccent"
+        android:text="Be the first one to ask a question"
+        android:layout_height="wrap_content" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:id="@+id/cmnt_fab"
+        app:backgroundTint="@color/colorPrimaryDark"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/add2"
+        android:layout_height="wrap_content" />
+
+
+
+</RelativeLayout>

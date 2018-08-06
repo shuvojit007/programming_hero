@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.test.programmingmama">
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_logo2"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_logo2"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity" />
+        <activity android:name=".View.Activity.Splash_Screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.ViewPager.CommunityViewPager" />
+        <activity android:name=".View.Activity.CommunityMultipleModule" />
+        <activity android:name=".View.ViewPager.CommunityMultipleModuleListViewPager" />
+        <activity android:name=".View.Activity.ProgrammingChallenge" />
+        <activity android:name=".View.Activity.WelcomeActivity" />
+        <activity android:name=".View.Activity.Profile_ModuleList_Activity" />
+        <activity android:name=".View.Activity.Profile_Achievement_Activity" />
+        <activity
+            android:name=".View.Activity.Congrats_Pop_Up"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity android:name=".View.Activity.About_Us" />
+        <activity android:name=".View.Activity.Authenticaiton" />
+        <activity android:name=".View.Activity.RegisterUser" />
+        <activity
+            android:name=".View.Activity.LoginUser"
+            android:label="@string/title_activity_login_user" />
+        <activity android:name=".View.Activity.Comments_List" />
+        <activity android:name=".View.Activity.Reply_Activity" />
+
+        <service
+            android:name=".Utils.Service.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".View.Activity.Explore_More" />
+        <activity android:name=".View.Activity.FeedBack_Module" />
+        <activity android:name=".View.Activity.Certificate" />
+        <activity android:name=".View.Activity.Challenge" />
+        <activity android:name=".View.Activity.Challenge3_Activity" />
+        <activity android:name=".View.Activity.Final_Challenge"></activity>
+    </application>
+
+</manifest>

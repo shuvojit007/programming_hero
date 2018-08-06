@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        app:cardElevation="5dp"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/text"
+                android:textColor="@color/colorPrimary"
+                android:text="Enter your question here ? "
+                android:layout_height="wrap_content" />
+            <EditText
+                android:background="@drawable/border"
+
+                android:layout_below="@+id/text"
+                android:padding="20dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/ed"
+                android:gravity="top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_below="@+id/lin2"
+                android:layout_margin="10dp"
+
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Cancel"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:id="@+id/cancel"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginRight="20dp"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Post"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:id="@+id/post"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_marginLeft="20dp"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+
+                android:layout_below="@+id/ed"
+                android:id="@+id/lin2"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="18dp"
+                    android:src="@drawable/hints2"
+                    android:layout_height="18dp" />
+                <TextView
+                    android:textSize="12sp"
+                    android:id="@+id/remainingtext"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="wrap_content"
+                    android:text="You have reamaining 600"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+
+
+    </android.support.v7.widget.CardView>
+</ScrollView>
+
+

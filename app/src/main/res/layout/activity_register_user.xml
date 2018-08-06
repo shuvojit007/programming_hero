@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/tl"
+        app:title="Register"
+        app:titleTextColor="@color/white"
+
+        app:navigationIcon="?attr/homeAsUpIndicator"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/action_bar_gradient">
+    </android.support.v7.widget.Toolbar>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_below="@+id/tl"
+        android:orientation="vertical"
+        android:layout_height="match_parent"
+        android:id="@+id/linearLayout">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/reg_email"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText3"
+
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your e-mail" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/reg_name"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText"
+
+                android:inputType="text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter Your Name" />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/reg_pass"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:hint="Enter password" />
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/reg_retypepass"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginLeft="30dp"
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <EditText
+                android:id="@+id/editText21"
+                android:layout_width="match_parent"
+
+                android:inputType="textPassword"
+                android:layout_height="wrap_content"
+                android:hint="Retype  password" />
+        </android.support.design.widget.TextInputLayout>
+
+
+
+
+        <Button
+            android:id="@+id/reg_signup"
+            android:layout_width="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="20dp"
+            android:background="@drawable/primary_color_btn"
+
+            android:paddingRight="20dp"
+            android:textColor="#fff"
+            android:layout_height="35dp"
+            android:text="Register" />
+
+        <TextView
+            android:fontFamily="@font/nunito_semibold"
+            android:layout_width="wrap_content"
+            android:text="Already have an account ? "
+            android:textColor="#000"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:fontFamily="@font/robotoregular"
+            android:layout_width="wrap_content"
+            android:text="Sign in now"
+            android:textStyle="bold"
+            android:id="@+id/reg_signin"
+            android:textColor="#000"
+            android:layout_marginTop="5dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

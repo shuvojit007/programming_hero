@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:circleview="http://schemas.android.com/tools"
+    xmlns:timer="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/apk/res-auto">
+
+    <com.example.test.programmingmama.Utils.TouchDetectableScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="81dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"
+                app:cardElevation="1dp">
+
+                <LinearLayout
+                    android:id="@+id/lin"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/modulename"
+                           android:layout_centerVertical="true"
+
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"
+
+                            android:text="Quiz"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="18sp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            />
+                        <!--<ImageView-->
+                            <!--android:layout_marginRight="10dp"-->
+                            <!--android:layout_alignParentRight="true"-->
+                            <!--android:layout_centerVertical="true"-->
+                            <!--android:id="@+id/bookmark"-->
+                            <!--android:src="@drawable/heart_unfill"-->
+                            <!--android:layout_width="30dp"-->
+                            <!--android:layout_height="35dp" />-->
+
+                        <com.like.LikeButton
+                            app:icon_type="heart"
+                            android:layout_marginRight="10dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:id="@+id/bookmark"
+                            app:icon_size="25dp"
+
+                            app:liked="false"
+                            android:layout_width="30dp"
+                            android:layout_height="35dp"/>
+
+                    </RelativeLayout>
+
+
+
+
+
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/roboto"
+                        android:id="@+id/des01"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/demo"
+                        android:textSize="16sp" />
+
+                    <ImageView
+
+
+                        android:id="@+id/img1"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="250dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/ifelse" />
+
+                    <TextView
+
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/roboto"
+                        android:id="@+id/des02"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/demo2"
+                        android:textSize="16sp" />
+
+
+
+                    <ImageView
+
+
+                        android:id="@+id/img2"
+                        android:layout_gravity="center"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dp"
+                        android:layout_margin="5dp"
+                        android:src="@drawable/app_install" />
+
+
+
+                    <android.support.v4.widget.Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp" />
+
+                    <io.github.kbiakov.codeview.CodeView
+                        android:visibility="gone"
+                        android:id="@+id/code_view"
+                        app:animateOnStart="true"
+                        android:padding="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_marginLeft="12dp"
+                        android:layout_width="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:id="@+id/run"
+                        android:layout_marginBottom="5dp"
+                        android:elevation="3dp"
+                        android:background="@drawable/rectangle_border"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="left"
+                        android:layout_height="25dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginEnd="10dp">
+
+                        <ImageView
+                            android:gravity="center_vertical"
+                            android:layout_width="wrap_content"
+                            android:src="@drawable/run"
+                            android:layout_height="wrap_content" />
+                        <TextView
+                            android:gravity="center_vertical"
+                            android:textColor="@color/colorPrimary"
+                            android:layout_width="wrap_content"
+                            android:text="Run"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <TextView
+
+                        android:textSize="15sp"
+                        android:textColor="#81ea6f"
+                        android:padding="5dp"
+                        android:background="#4b4444"
+                        android:id="@+id/output"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="match_parent"
+                        android:text="Shuvojit Kar"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/roboto"
+                        android:id="@+id/des03"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:text="@string/demo"
+                        android:textSize="16sp" />
+                    <LinearLayout
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/rectangle_border"
+                        android:gravity="center"
+                        android:id="@+id/ptxtlin"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="5dp"
+                        android:elevation="3dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:orientation="horizontal"
+                        android:layout_marginStart="5dp">
+                        <!--<ImageView
+
+                            android:layout_width="23dp"
+                            android:layout_height="23dp"
+                            android:src="@drawable/premium"
+                            />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textSize="16sp"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:text=" Explain More "
+                       />
+
+                        <android.support.v7.widget.SwitchCompat
+                            android:id="@+id/premimumswitch"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                />
+                   
+                    </LinearLayout>
+                    <TextView
+                        android:textColor="@color/colorAccent"
+                        android:fontFamily="@font/roboto"
+                        android:id="@+id/ptxt"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="@string/demo"
+                        android:textSize="16sp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+
+
+            <Button
+
+                android:id="@+id/btndetails"
+                android:text="Next"
+
+                android:layout_gravity="right"
+                android:textAppearance="@style/TextAppearance.AppCompat.Button"
+                android:textColor="#FFFFFF"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rounded_corners_light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+            <android.support.v4.widget.Space
+                android:layout_width="match_parent"
+                android:layout_height="120dp" />
+
+
+        </LinearLayout>
+
+    </com.example.test.programmingmama.Utils.TouchDetectableScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/feedback"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        >
+
+        <TextView
+            android:padding="5dp"
+            android:id="@+id/tvCreadteDate_vt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Feedback or Comment"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp" />
+
+        <ImageView
+            android:padding="5dp"
+            android:id="@+id/ivDeleteTodo"
+            android:layout_width="28dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/feed"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="10dp"
+            android:layout_alignParentEnd="true" />
+
+
+    </RelativeLayout>
+</RelativeLayout>

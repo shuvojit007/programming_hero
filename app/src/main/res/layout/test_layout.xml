@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:id="@+id/itembody"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:layout_marginRight="13dp"
+                android:layout_marginLeft="110dp"
+                android:layout_width="50dp"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/test_planet"
+                android:layout_height="50dp" />
+            <TextView
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="110dp"
+                android:layout_width="40dp"
+                android:id="@+id/planetid"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text=" 10 "
+                android:fontFamily="@font/roboto"
+                android:textColor="@color/colorAccent"
+                android:layout_height="40dp" />
+
+
+
+            <RelativeLayout
+                android:id="@+id/planet"
+                android:layout_marginTop="35dp"
+                android:layout_marginLeft="25dp"
+                android:layout_width="145dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="25dp">
+
+
+                <ImageView
+                    android:layout_width="140dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/planet1"
+                    android:id="@+id/planetimg"
+                    android:layout_height="140dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:orientation="vertical"
+
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:textSize="16sp"
+                        android:id="@+id/planetname"
+                        android:fontFamily="@font/roboto"
+                        android:textColor="@color/white"
+                        android:layout_width="wrap_content"
+                        android:text="Challenge "
+                        android:layout_height="wrap_content" />
+                    <RatingBar
+                        android:visibility="gone"
+                        android:layout_marginTop="5dp"
+                        android:id="@+id/planet_rating"
+                        android:theme="@style/RatingBar"
+                        style="?android:attr/ratingBarStyleSmall"
+                        android:layout_width="80dp"
+                        android:layout_height="20dp"
+                        android:numStars="5"
+                        android:rating="5"
+                        android:stepSize="0.5" />
+                    <ImageView
+                        android:visibility="gone"
+                       android:id="@+id/planetlock"
+                        android:layout_marginTop="5dp"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/lock"/>
+                    <ImageView
+                        android:id="@+id/planetcompleted"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/completed"/>
+
+                    <ImageView
+                        android:id="@+id/planetopen"
+                        android:layout_marginTop="5dp"
+                        android:visibility="gone"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/open"/>
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:src="@drawable/testrocket"
+            android:layout_height="25dp" />
+        <ImageView
+
+            android:layout_marginTop="70dp"
+            android:layout_marginRight="95dp"
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:src="@drawable/test_rocket4"
+            android:layout_height="25dp" />
+
+        <ImageView
+            android:layout_marginTop="95dp"
+            android:layout_marginRight="30dp"
+
+            android:layout_alignParentRight="true"
+            android:layout_width="25dp"
+            android:src="@drawable/test_rocket5"
+            android:layout_height="25dp" />
+
+    </RelativeLayout>
+
+
+
+
+    </FrameLayout>
+
+
+
+
+

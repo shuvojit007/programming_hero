@@ -1,0 +1,112 @@
+{
+	"finalchallenge": [{
+			"question": "What would be the value of b?",
+			"type": "quiz",
+			"fquiz": {
+				"solution": "5",
+				"code": "a = 5 \nb = 7 \nc = b = a \nprint(b)",
+				"set1": "7",
+				"set2": "5",
+				"set3": "69"
+			}
+		},{
+			"question": "What would be the value of the variable named count?",
+			"type": "quiz",
+			"fquiz": {
+				"solution": "69",
+				"code": "count = '69' \ncount = int(count)",
+				"set1": "int",
+				"set2": "String",
+				"set3": "69"
+			}
+		},{
+			"question": "What will be the value of z?",
+			"type": "printsln",
+			"fblanks": {
+				"soln": "-24",
+				"tf1": "x = 5<br\/>y = 7<br\/>z = (x + y) * (x - y)<br\/>Z = 21<br\/>print(z)",
+				"tt1": "null",
+				"tt2": "null",
+				"tf2": "null",
+				"output": "True"
+			}
+		},
+		{
+			"question": "Robin Hood steals money from the rich and gives it to poor families. One night Robin Hood was able to steal $25, and then he distributed the money among 7 poor families. How will you find out how much money he has left?",
+			"type": "printsln",
+			"fblanks": {
+				"soln": "%",
+				"tf1": "money = 25<br\/>families = 7",
+				"tt1": "money_left = money",
+				"tt2": "families",
+				"tf2": "print(money_left)",
+				"output": "%"
+			}
+		},{
+			"question": "What keyword is used to write conditional output?",
+			"type": "printsln",
+			"fblanks": {
+				"soln": "if",
+				"tf1": "temperature = 21",
+				"tt1": "null",
+				"tt2": " temperature < 0:",
+				"tf2": "&emsp; print(\"Icy Icy cool cool\")<br\/>else:<br\/>&emsp; print(\"I am so hot\")",
+				"output": "if"
+			}
+		}, 
+		{
+			"question": "Which keyword do you need to write when you have more than two outcomes?",
+			"type": "printsln",
+			"fblanks": {
+				"soln": "elif",
+				"tf1": "if age < 5:<br\/> &emsp; print(\"Watch Tom & Jerry\")",
+				"tt1": "null",
+				"tt2": "age < 18:",
+				"tf2": "&emsp; print (\"Watch a Family Movie\")<br\/> else:<br\/>&emsp; print (\"Do whatever you want\")",
+				"output": "elif"
+			}
+		},
+		{
+			"question": "How to find out how many elements are in the drinks list below?",
+			"type": "printsln",
+			"fblanks": {
+				"soln": "len",
+				"tf1": "drinks = ['Coca Cola', 'Fanta', 'Water', 'Coffee']",
+				"tt1": "count =",
+				"tt2": "(drinks)",
+				"tf2": "print(count)",
+				"output": "len"
+			}
+		},{
+			"question": "What would be the easiest way to see the output of each element of a list of sports?",
+			"type": "quiz",
+			"fquiz": {
+				"solution": "Use a for loop",
+				"code": "sports = ['Football', 'Tennis', 'BasketBall', 'Hockey']",
+				"set1": "Print one by one by using an index",
+				"set2": "Write a function and pass sports as a parameter",
+				"set3": "Use a for loop"
+			}
+		},{
+			"question": "What is wrong with the following code",
+			"type": "quiz",
+			"fquiz": {
+				"solution": "Loop variable is not changing",
+				"code": "num = 31\ni = 2\nwhile i < num:\n  if num % i == 0:\n     print(\"I am done\")\n     break",
+				"set1": "It should be a for loop",
+				"set2": "Indentation is not correct",
+				"set3": "Loop variable is not changing"
+			}
+		},{
+			"question": "What is wrong with the following code?",
+			"type": "quiz",
+			"fquiz": {
+				"solution": "All of the above",
+				"code": "cars = ['Toyota', 'Honda', 'BMW', 'Nissan']\nfor car on cars\n   print(car)",
+				"set1": "Instead of in, for loop has on",
+				"set2": "There is no colon after the line of for loop",
+				"set3": "All of the above"
+			}
+		}
+	]
+}

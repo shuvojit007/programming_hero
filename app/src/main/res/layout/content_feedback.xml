@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:background="@android:color/transparent"
+
+    android:layout_height="wrap_content">
+
+<ImageView
+    android:id="@+id/cancel"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:src="@drawable/cancel"
+    android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="Give us feedback"
+        android:textSize="25sp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="20dp"
+        android:id="@+id/feed"
+        android:gravity="center"
+        android:textColor="@color/colorAccent"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_below="@+id/feed"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="@drawable/border"
+            android:layout_margin="20dp"
+            android:padding="10dp"
+            android:id="@+id/ed"
+            android:gravity="top"
+            android:layout_width="match_parent"
+            android:layout_height="150dp" />
+
+        <Button
+            android:textSize="18sp"
+            android:id="@+id/submit"
+            android:text="Submit"
+            android:layout_gravity="right"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="#FFFFFF"
+            style="@style/Widget.AppCompat.ButtonBar.AlertDialog"
+            android:layout_margin="20dp"
+            android:background="@drawable/rounded_corners_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fillViewport="true"
+    android:layout_height="match_parent"
+
+
+    tools:context=".View.Activity.About_Us">
+<RelativeLayout
+    android:background="@drawable/gradient_back"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/ic_logo"
+        android:id="@+id/img"
+        android:layout_width="120dp"
+        android:layout_height="120dp" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/img"
+        android:layout_width="wrap_content"
+        android:text="Programming Hero"
+        android:textSize="25sp"
+        android:id="@+id/name"
+
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/name"
+        android:layout_width="wrap_content"
+        android:text="Version 1.0"
+        android:id="@+id/version"
+        android:textSize="16sp"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:gravity="center"
+        android:id="@+id/aboutusmsg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/version"
+        android:layout_width="match_parent"
+        android:text="@string/aboutus"
+        android:layout_margin="12dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/nunito_semibold"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/aboutusmsg"
+        android:layout_width="wrap_content"
+        android:text="Contact Us"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/contactus"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/contactusimg"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/contactus"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="50dp"
+            android:src="@drawable/facebook"
+            android:layout_height="50dp" />
+        <ImageView
+            android:layout_margin="5dp"
+            android:layout_width="48dp"
+            android:src="@drawable/instragram"
+            android:layout_height="45dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_below="@+id/contactusimg"
+        android:layout_width="wrap_content"
+        android:text="Visit Out Website"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:id="@+id/visitus"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:layout_below="@+id/visitus"
+        android:layout_width="wrap_content"
+        android:text="www. programminghero.com"
+        android:fontFamily="@font/robotoregular"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textSize="18dp"
+        android:layout_marginBottom="15dp"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
+
+
+</ScrollView>
